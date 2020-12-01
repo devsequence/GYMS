@@ -1,0 +1,137 @@
+.header{
+  &-top{
+    padding: 20px 0;
+    border-bottom: 1px solid $light;
+    .container{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1400px;
+    }
+  }
+
+  &-lang{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &-lang__media{
+    width: 14px;
+    height: 14px;
+    .icon{
+      height: inherit;
+      width: inherit;
+    }
+  }
+  &-lang__chevron{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .icon{
+      height: 5px;
+    }
+  }
+  &-lang__title{
+    font-family: $monserant;
+    font-weight: 500;
+    color: $default;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  &-lang__list{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  &-social{
+    ul{
+      display: flex;
+    }
+  }
+  &-login{
+    display: flex;
+    align-items: center;
+  }
+  &-login__media{
+    height: 20px;
+    margin-right: 5px;
+    .icon{
+      fill: $gray-100;
+    }
+  }
+  &-login__title{
+    font-family: $monserant;
+    font-weight: 500;
+    color: $default;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  &-bottom{
+    padding: 15px 0;
+    .container{
+      display: flex;
+      align-items: center;
+      max-width: 1400px;
+    }
+  }
+  &-logo{
+    width: 290px;
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    img{
+      width: 130px;
+    }
+
+  }
+  &-logo__text{
+    width: 122px;
+    font-family: $monserant;
+    font-weight: 400;
+    color: $default;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &-nav{
+    margin: 0 auto;
+  }
+  &-nav__list{
+    display: flex;
+    li{
+      margin: 0 10px;
+    }
+    a{
+      font-family: $monserant;
+      font-weight: 500;
+      color: $default;
+      font-size: 15px;
+      line-height: 15px;
+      &:hover{
+        color: $gray;
+      }
+    }
+  }
+  &-phone{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  &-phone__link{
+    font-family: $monserant;
+    color: $default;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &-phone__btn{
+    font-family: $monserant;
+    color: $primary;
+    font-size: 12px;
+    font-weight: 400;
+    background: transparent;
+    width: 100%;
+    text-align: right;
+  }
+}

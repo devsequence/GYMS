@@ -1,0 +1,283 @@
+@media screen and (max-width: 1200px) {
+  .main-wrap{
+    &__media-info{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .title-section{
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .plans-wrap{
+    flex-wrap: wrap;
+  }
+  .plan-item{
+    width: calc(33.33% - 30px);
+  }
+  .try-online{
+    &__info{
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .try-free{
+    &__title{
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .question-wrap{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    &__info{
+      width: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+      .title-section{
+        text-align: center;
+      }
+    }
+  }
+  .main-wrap{
+    flex-direction: column-reverse;
+    &__media{
+      width: 100%;
+      margin-bottom: 30px;
+      img{
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+      }
+    }
+    &__media-info{
+      text-align: left;
+    }
+    &__info{
+      width: 100%;
+      text-align: center;
+      ul{
+        text-align: left;
+      }
+    }
+    .btn{
+      margin: 0 auto;
+    }
+  }
+  .title-section{
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .slick-list{
+    padding: 30px 0;
+  }
+  .plan-item{
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+  }
+  .try-online{
+    flex-wrap: wrap;
+    &__info{
+      text-align: center;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    &__link{
+      width: 100%;
+    }
+  }
+  .try-free{
+    flex-wrap: wrap;
+    &__link{
+      width: 100%;
+      text-align: center;
+    }
+    &__title{
+      .icon{
+        display: none;
+      }
+    }
+  }
+  .plans-info{
+    padding: 50px 0 0;
+    &__slider{
+      width: calc(100% - 90px);
+      margin: 0 auto;
+    }
+  }
+  .advantages-info{
+    &__description {
+      width: calc(100% - 150px);
+    }
+    &__title{
+      font-size: 17px;
+    }
+    &__media{
+      width: 150px;
+      height: 150px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .title-section{
+    margin-bottom: 30px;
+  }
+  .subtitle-section{
+    font-size: 18px;
+  }
+  .banner-wrapper{
+    &:before{
+      display: none;
+    }
+    .banner-list{
+      li{
+        line-height: 28px;
+        span{
+          font-size: 28px;
+          line-height: 28px;
+          font-weight: 600;
+        }
+      }
+    }
+    .banner-info{
+      font-size: 12px;
+    }
+    .banner-description{
+      width: calc(100% - 150px);
+    }
+    .banner-media{
+      margin-top: -30px;
+      width: 150px;
+    }
+    .banner-media__item{
+      max-width: 150px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .why-wrapper{
+    padding: 50px 0;
+  }
+  .why-wrap{
+    flex-wrap: wrap;
+  }
+  .why-item{
+    flex-wrap: wrap;
+    width: 100%;
+    &:first-of-type{
+      width: 100%;
+      margin-bottom: 30px;
+      .why-item__list{
+        li{
+          width: 100%;
+        }
+      }
+    }
+    &__title{
+      min-height: auto;
+      margin-bottom: 15px;
+    }
+  }
+  .check-list{
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mob_header{
+    top: 0;
+  }
+  .mob_header-logo{
+    img{
+      height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-wrapper{
+    .banner-description{
+      width: 100%;
+    }
+    .banner-list {
+      li{
+        font-size: 16px;
+        span{
+          font-size: 23px;
+        }
+      }
+    }
+    .banner-media{
+      display: none;
+    }
+  }
+  .advantages-info{
+    flex-wrap: wrap;
+    &__description {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    &__title{
+    }
+    &__media{
+      width: 100%;
+    }
+  }
+  .advantages-wrap{
+    margin: 0;
+  }
+  .advantages-item{
+    width: 100%;
+    margin: 0;
+  }
+  .privilege-wrap{
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .privilege-item{
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .why-wrap{
+    margin-bottom: 30px;
+  }
+  .wrapper-seo{
+    .title-section{
+      h1{
+        font-size: 28px;
+        line-height: 28px;
+      }
+    }
+  }
+  .question-wrap{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    &__media{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .plans-wrap{
+    margin: 0;
+  }
+  .plan-item{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 480px) {}
+@media screen and (max-width: 425px) {}
+@media screen and (max-width: 380px) {}
+@media screen and (max-width: 320px) {}

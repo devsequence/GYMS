@@ -1,0 +1,81 @@
+.footer{
+  background: $gray;
+  padding: 40px 0;
+  &-logo{
+    margin-bottom: 40px;
+    img{
+      margin-bottom: 20px;
+    }
+  }
+  &-logo__text{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $monserant;
+    color: $default;
+    font-weight: 400;
+  }
+  .our-location{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $monserant;
+    color: $primary;
+    font-weight: 400;
+    span{
+      color: $default;
+    }
+  }
+  .footer-copy{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $monserant;
+    color: $default;
+    font-weight: 400;
+  }
+  &-title{
+    font-size: 18px;
+    line-height: 18px;
+    font-family: $monserant;
+    color: $default;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  &-nav__list{
+    ul{
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    li{
+      width: 50%;
+      font-size: 14px;
+      line-height: 16px;
+      font-family: $monserant;
+      color: $default;
+      font-weight: 400;
+      margin-bottom: 10px;
+      a{
+        font-size: 14px;
+        line-height: 16px;
+        font-family: $monserant;
+        color: $default;
+      }
+    }
+  }
+  &-info{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $monserant;
+    color: $default;
+    font-weight: 400;
+    a{
+      font-size: 16px;
+      line-height: 16px;
+      font-family: $monserant;
+      color: $default;
+      font-weight: 500;
+      display: block;
+    }
+
+    margin-bottom: 20px;
+  }
+}
