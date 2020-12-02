@@ -159,6 +159,9 @@
   section{
     padding: 40px 0;
   }
+  section.wrapper{
+    overflow: hidden;
+  }
   .section-title{
     font-size: 30px;
     margin-bottom: 30px;
@@ -400,6 +403,11 @@
     }
     .service-item{
       flex-wrap: wrap;
+      &:first-of-type{
+        .site-list{
+          display: block;
+        }
+      }
       &.is-open{
         .service-item__title{
           svg{
@@ -408,7 +416,6 @@
         }
         .site-list{
           display: block;
-          margin:10px 0 0;
         }
       }
     }
@@ -442,7 +449,22 @@
   }
   .service-item{
     padding: 15px;
-    border: 1px solid $gray;
+    border-top: 1px solid $gray;
+    margin-bottom: 0;
+    .site-list{
+      padding-top: 15px;
+      margin: 0;
+      li{
+        margin-bottom: 15px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+    &:last-of-type{
+      border-bottom: 1px solid $gray;
+      margin-bottom: 33px;
+    }
   }
   .work-wrap{
     max-width: 500px;
@@ -533,6 +555,7 @@
       span{
         font-size: 48px;
         line-height: 48px;
+        margin-bottom: 10px;
       }
     }
     &__text{

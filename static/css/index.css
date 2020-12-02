@@ -1393,6 +1393,8 @@ button {
 @media screen and (max-width: 992px) {
   section {
     padding: 40px 0; }
+  section.wrapper {
+    overflow: hidden; }
   .section-title {
     font-size: 30px;
     margin-bottom: 30px; }
@@ -1551,11 +1553,12 @@ button {
     display: none; }
   .service-wrapper .service-item {
     flex-wrap: wrap; }
+    .service-wrapper .service-item:first-of-type .site-list {
+      display: block; }
     .service-wrapper .service-item.is-open .service-item__title svg {
       transform: rotate(180deg); }
     .service-wrapper .service-item.is-open .site-list {
-      display: block;
-      margin: 10px 0 0; }
+      display: block; }
   .service-wrapper .service-item__list {
     width: 100%; }
   .site-list {
@@ -1578,7 +1581,18 @@ button {
     margin: 0 -15px; }
   .service-item {
     padding: 15px;
-    border: 1px solid #dadce6; }
+    border-top: 1px solid #dadce6;
+    margin-bottom: 0; }
+    .service-item .site-list {
+      padding-top: 15px;
+      margin: 0; }
+      .service-item .site-list li {
+        margin-bottom: 15px; }
+        .service-item .site-list li:last-of-type {
+          margin-bottom: 0; }
+    .service-item:last-of-type {
+      border-bottom: 1px solid #dadce6;
+      margin-bottom: 33px; }
   .work-wrap {
     max-width: 500px; }
   .work-item {
@@ -1632,7 +1646,8 @@ button {
     margin-bottom: 10px; }
     .main-slide__title span {
       font-size: 48px;
-      line-height: 48px; }
+      line-height: 48px;
+      margin-bottom: 10px; }
   .main-slide__text {
     font-size: 14px;
     margin-bottom: 30px; }

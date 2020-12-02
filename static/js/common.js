@@ -41,14 +41,17 @@ if (windowWidth < 768) {
     $('.service-item').on('click', function (e) {
         e.preventDefault();
         var $this = $(this);
+
         var $thisList = $this.find('.service-item__list');
-        if($this.hasClass('is-open')){
-            $('.service-item').removeClass('is-open');
-            $this.removeClass('is-open');
-        }else{
-            $('.service-item').removeClass('is-open');
-            $this.addClass('is-open');
-        }
+         $thisList.slideToggle();
+        $this.toggleClass('is-open');
+        // if($this.hasClass('is-open')){
+        //     $('.service-item').removeClass('is-open');
+        //     $this.removeClass('is-open');
+        // }else{
+        //     $('.service-item').removeClass('is-open');
+        //     $this.addClass('is-open');
+        // }
     });
 }
 
