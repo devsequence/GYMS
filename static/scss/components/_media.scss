@@ -66,6 +66,9 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .main-slider{
+    padding: 30px 0 0;
+  }
   .main-slide{
     &__title{
       font-size: 36px;
@@ -336,7 +339,7 @@
   .brands-item{
     max-width: calc(25% - 2px);
     &:hover{
-      transform: scale(1);
+      transform: scale(1) !important;
       box-shadow: none;
     }
   }

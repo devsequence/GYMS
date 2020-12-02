@@ -207,6 +207,7 @@
   background: $white;
   position: relative;
   padding: 90px 0;
+  overflow: hidden;
   &:after{
     position: absolute;
     content: '';
@@ -387,6 +388,7 @@
 .banner-wrapper{
   background: $primary;
   padding: 60px 0 0;
+  overflow: hidden;
   .banner-media{
     position: relative;
     &:before{
@@ -434,7 +436,7 @@
     margin: 0 8px;
   }
   .slick-list {
-    margin: 0 -16px;
+    margin: 0 -8px;
   }
   .slick-arrow{
     z-index: 2;
