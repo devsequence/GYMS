@@ -101,14 +101,15 @@
             </div>
             <div class="header-search">
                 <form action="#">
+                    <button type="submit">
+                        <svg class="icon">
+                            <use xlink:href="#ic-search"></use>
+                        </svg>
+                    </button>
                     <label for="search">
                         <input id="search" type="search" placeholder="Поиск по сайту">
                     </label>
-                    <button type="submit">
-                        <svg class="icon">
-                            <use xlink:href="#search"></use>
-                        </svg>
-                    </button>
+
                 </form>
             </div>
             <a href="#" class="header-login">
@@ -138,42 +139,42 @@
             <div class="header-nav">
                 <ul class="header-nav__list">
                     <li>
-                        <a href="#">
+                        <a href="#main">
                             Главная
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#about">
                             О нас
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#service">
                             Услуги
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#advantage">
                             Выгоды
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#work">
                             Как мы работаем
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#news">
                             Новости
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#brands">
                             Участники
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#footer">
                             Контакты
                         </a>
                     </li>
@@ -185,34 +186,40 @@
                     Заказать звонок
                 </button>
             </div>
+            <div class="header-btn">
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 </header>
 	<!--page-content-->
 	<div class="page-content">
-		<section class="wrapper main-wrapper">
+		<section class="wrapper main-wrapper" id="main">
 			<div class="main-slider">
 				<div class="slide">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 col-md-6">
-								<div class="main-slide__title">
+							<div class="col-8 col-md-6">
+								<div class="pattern-item pattern-item__left"></div>
+								<div class="main-slide__title"  data-aos="fade-up" data-aos-duration="1000">
 									<span>GYMS</span>
 									Business Solutions
 								</div>
-								<div class="main-slide__text">
+								<div class="main-slide__text" data-aos="fade-up" data-aos-duration="1000">
 									Международный агрегатор услуг
 									в сфере фитнес-индустрии
 								</div>
-								<div class="main-slide__link main-call">
+								<div class="main-slide__link main-call" data-aos="fade-up" data-aos-duration="1000">
 									<a href="tel:+74957403996">+7 (495) 740-39-96</a>
 									<button class="btn btn-blue btn-popup" data-popup="call-manager">
 										Связаться с менеджером
 									</button>
 								</div>
 							</div>
-							<div class="col-12 col-md-6">
-								<div class="main-slide__media">
+							<div class="col-4 col-md-6">
+								<div class="pattern-item pattern-item__right"></div>
+								<div class="main-slide__media" data-aos="fade-left" data-aos-duration="1000">
 									<img src="../static/images/general/slide-img.png" alt="">
 								</div>
 							</div>
@@ -222,24 +229,26 @@
 				<div class="slide">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 col-md-6">
-								<div class="main-slide__title">
+							<div class="col-8 col-md-6">
+								<div class="pattern-item pattern-item__left"></div>
+								<div class="main-slide__title" data-aos="fade-up" data-aos-duration="1000">
 									<span>GYMS</span>
 									Business Solutions
 								</div>
-								<div class="main-slide__text">
+								<div class="main-slide__text" data-aos="fade-up" data-aos-duration="1000">
 									Международный агрегатор услуг
 									в сфере фитнес-индустрии
 								</div>
-								<div class="main-slide__link main-call">
+								<div class="main-slide__link main-call" data-aos="fade-up" data-aos-duration="1000">
 									<a href="tel:+74957403996">+7 (495) 740-39-96</a>
 									<button class="btn btn-blue btn-popup" data-popup="call-manager">
 										Связаться с менеджером
 									</button>
 								</div>
 							</div>
-							<div class="col-12 col-md-6">
-								<div class="main-slide__media">
+							<div class="col-4 col-md-6">
+								<div class="pattern-item pattern-item__right"></div>
+								<div class="main-slide__media" data-aos="fade-left" data-aos-duration="1000">
 									<img src="../static/images/general/slide-img.png" alt="">
 								</div>
 							</div>
@@ -248,20 +257,22 @@
 				</div>
 			</div>
 		</section>
-		<section class="wrapper about-wrapper">
+		<section class="wrapper about-wrapper" id="about">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg-6">
+					<div class="col-12 col-md-5 col-lg-6">
 						<div class="about-media">
-							<img src="../static/images/general/about-img.png" alt="">
+							<div class="pattern-item pattern-item__left"></div>
+							<img src="../static/images/general/about-img.png" alt="" data-aos="fade-right" data-aos-duration="1000">
+							<div class="pattern-item pattern-item__right"></div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-6">
-						<div class="section-title">
+					<div class="col-12 col-md-7 col-lg-6">
+						<div class="section-title" data-aos="fade-up" data-aos-duration="1000">
 							О нас
 						</div>
 						<div class="about-wrap">
-							<div class="about-item">
+							<div class="about-item" data-aos="fade-up" data-aos-duration="1100">
 								<div class="about-item__media">
 									<img src="../static/images/svg/about-ico-1.svg" alt="">
 								</div>
@@ -274,7 +285,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="about-item">
+							<div class="about-item" data-aos="fade-up" data-aos-duration="1200">
 								<div class="about-item__media">
 									<img src="../static/images/svg/about-ico-2.svg" alt="">
 								</div>
@@ -287,7 +298,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="about-item">
+							<div class="about-item" data-aos="fade-up" data-aos-duration="1300">
 								<div class="about-item__media">
 									<img src="../static/images/svg/about-ico-3.svg" alt="">
 								</div>
@@ -305,36 +316,88 @@
 				</div>
 			</div>
 		</section>
-		<section class="wrapper service-wrapper">
+		<section class="wrapper service-wrapper" id="service">
 			<div class="container">
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-up" data-aos-duration="1000">
 					Услуги компании B2GYMS
 				</div>
 				<div class="row">
-					<div class="col-12 col-lg-3">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="pattern-item"></div>
 						<div class="service-wrap">
-							<div class="service-item">
+							<div class="service-item" data-aos="fade-up" data-aos-duration="1000">
 								<div class="service-item__media">
 									<img src="../static/images/svg/service-ico-1.svg" alt="">
 								</div>
 								<div class="service-item__title">
 									Открытие фитнес клуба под ключ
+									<svg class="icon">
+										<use xlink:href="#ic-chevron"></use>
+									</svg>
 								</div>
+								<ul class="service-item__list site-list">
+									<li>
+										Разработка бизнес-проекта
+									</li>
+									<li>
+										Маркетинговая стратегия
+									</li>
+									<li>
+										Финансовая аналитика
+									</li>
+									<li>
+										Орг. Структура и персонал
+									</li>
+									<li>
+										Орг. Структура и персонал
+									</li>
+									<li>
+										Подбор оборудования
+									</li>
+									<li>
+										Сопровождение открытия
+									</li>
+								</ul>
+							</div>
+							<div class="service-item" data-aos="fade-up" data-aos-duration="1000">
+								<div class="service-item__media">
+									<img src="../static/images/svg/service-ico-2.svg" alt="">
+								</div>
+								<div class="service-item__title">
+									Финансировние, лизинг и расрочка
+									<svg class="icon">
+										<use xlink:href="#ic-chevron"></use>
+									</svg>
+								</div>
+								<ul class="service-item__list site-list">
+									<li>
+										Финансировние 1
+									</li>
+									<li>
+										Финансировние 2
+									</li>
+									<li>
+										Финансировние 3
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-12 col-lg-6">
-						<div class="service-media">
+						<div class="service-media" data-aos="fade-up" data-aos-duration="1000">
+							<div class="pattern-item pattern-item__left"></div>
 							<img src="../static/images/general/service-img.png" alt="">
+							<div class="pattern-item pattern-item__right"></div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-3">
+					<div class="col-12 col-md-6 col-lg-3">
+						<div class="pattern-item"></div>
 						<div class="service-info">
-							<div class="section-subtitle">
+							<div class="service-info__title section-subtitle" data-aos="fade-up" data-aos-duration="1000">
 								Открытие фитнес
 								клуба ﻿под ключ
 							</div>
-							<ul class="site-list">
+							<ul class="service-info__list site-list" data-aos="fade-up" data-aos-duration="1000">
 								<li>
 									Разработка бизнес-проекта
 								</li>
@@ -357,29 +420,30 @@
 									Сопровождение открытия
 								</li>
 							</ul>
-							<div class="main-call">
-								<a href="tel:+74957403996">+7 (495) 740-39-96</a>
-								<button class="btn btn-blue btn-popup" data-popup="call-manager">
-									Связаться с менеджером
-								</button>
-							</div>
+						</div>
+						<div class="main-call" data-aos="fade-up" data-aos-duration="1000">
+							<a href="tel:+74957403996">+7 (495) 740-39-96</a>
+							<button class="btn btn-blue btn-popup" data-popup="call-manager">
+								Связаться с менеджером
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="wrapper advantage-wrapper">
+		<section class="wrapper advantage-wrapper" id="advantage">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-5">
+					<div class="col-md-12 col-lg-5">
+						<div class="pattern-item"></div>
 						<div class="advantage__info">
-							<div class="section-title">
+							<div class="section-title" data-aos="fade-up" data-aos-duration="1000">
 								Выгоды
 							</div>
-							<div class="section-text">
+							<div class="section-text" data-aos="fade-up" data-aos-duration="1200">
 								Наши специалисты помогут решить любую задачу связанную с открытием или эксплуатаций клуба. А наши партнерские условия сотрудничества с поставщиками оборудования и услуг для фитнес центров помогут получить для вас самое выгодное предложение
 							</div>
-							<div class="main-call">
+							<div class="main-call" data-aos="fade-up" data-aos-duration="1300">
 								<a href="tel:+74957403996">+7 (495) 740-39-96</a>
 								<button class="btn btn-blue btn-popup" data-popup="call-manager">
 									Связаться с менеджером
@@ -387,10 +451,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-7">
-						<div class="advantage-wrap">
+					<div class="col-md-12 col-lg-7">
+						<div class="advantage-wrap" data-aos="fade-left" data-aos-duration="1000">
 							<div class="advantage-item">
-								<div class="advantages-item__media">
+								<div class="advantage-item__media">
 									<img src="../static/images/svg/advantages-ico-1.svg" alt="">
 								</div>
 								<div class="advantage-item__title">
@@ -401,7 +465,7 @@
 								</div>
 							</div>
 							<div class="advantage-item">
-								<div class="advantages-item__media">
+								<div class="advantage-item__media">
 									<img src="../static/images/svg/advantages-ico-1.svg" alt="">
 								</div>
 								<div class="advantage-item__title">
@@ -412,7 +476,7 @@
 								</div>
 							</div>
 							<div class="advantage-item">
-								<div class="advantages-item__media">
+								<div class="advantage-item__media">
 									<img src="../static/images/svg/advantages-ico-1.svg" alt="">
 								</div>
 								<div class="advantage-item__title">
@@ -423,7 +487,7 @@
 								</div>
 							</div>
 							<div class="advantage-item">
-								<div class="advantages-item__media">
+								<div class="advantage-item__media">
 									<img src="../static/images/svg/advantages-ico-1.svg" alt="">
 								</div>
 								<div class="advantage-item__title">
@@ -438,36 +502,37 @@
 				</div>
 			</div>
 		</section>
-		<section class="wrapper map-wrapper">
+		<section class="wrapper map-wrapper" id="map">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-7">
-						<div class="map-media">
+						<div class="map-media" data-aos="fade-right" data-aos-duration="1300">
 							<img src="../static/images/general/map.png" alt="">
 						</div>
 					</div>
 					<div class="col-12 col-lg-5">
-						<div class="section-title">
+						<div class="section-title" data-aos="fade-up" data-aos-duration="1300">
 							GYMS всегда рядом
 						</div>
-						<div class="section-text">
+						<div class="section-text" data-aos="fade-up" data-aos-duration="1300">
 							Благодаря развитой в 120 городах глобальной сети, Gyms выводит свои услуги на новый уровень.
 						</div>
-						<div class="counter-block">
+						<div class="counter-block" data-aos="fade-up" data-aos-duration="1300">
 							<div class="counter-block__numb">1024</div>
 							<div class="counter-block__title">клиентов каждый день</div>
 						</div>
+						<div class="pattern-item"></div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="wrapper work-wrapper">
+		<section class="wrapper work-wrapper" id="work">
 			<div class="container">
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-up" data-aos-duration="1000">
 					Как мы работаем
 				</div>
 				<div class="work-wrap">
-					<div class="work-item">
+					<div class="work-item" data-aos="fade-up" data-aos-duration="1300">
 						<div class="work-item__media">
 							<span class="work-item__step">1</span>
 							<img src="../static/images/svg/work-ico-1.svg" alt="">
@@ -476,7 +541,7 @@
 							Оставляете заявку выбрав необходимые ﻿услуги
 						</div>
 					</div>
-					<div class="work-item">
+					<div class="work-item" data-aos="fade-up" data-aos-duration="1300">
 						<div class="work-item__media">
 							<span class="work-item__step">1</span>
 							<img src="../static/images/svg/work-ico-1.svg" alt="">
@@ -485,7 +550,7 @@
 							Оставляете заявку выбрав необходимые ﻿услуги
 						</div>
 					</div>
-					<div class="work-item">
+					<div class="work-item" data-aos="fade-up" data-aos-duration="1300">
 						<div class="work-item__media">
 							<span class="work-item__step">1</span>
 							<img src="../static/images/svg/work-ico-1.svg" alt="">
@@ -494,7 +559,7 @@
 							Оставляете заявку выбрав необходимые ﻿услуги
 						</div>
 					</div>
-					<div class="work-item">
+					<div class="work-item" data-aos="fade-up" data-aos-duration="1300">
 						<div class="work-item__media">
 							<span class="work-item__step">1</span>
 							<img src="../static/images/svg/work-ico-1.svg" alt="">
@@ -503,7 +568,7 @@
 							Оставляете заявку выбрав необходимые ﻿услуги
 						</div>
 					</div>
-					<div class="work-item">
+					<div class="work-item" data-aos="fade-up" data-aos-duration="1300">
 						<div class="work-item__media">
 							<span class="work-item__step">1</span>
 							<img src="../static/images/svg/work-ico-1.svg" alt="">
@@ -515,24 +580,26 @@
 				</div>
 			</div>
 		</section>
-        <section class="wrapper banner-wrapper">
+        <section class="wrapper banner-wrapper" id="banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="banner-media">
-                            <img src="../static/images/general/banner-img.png" alt="">
+                    <div class="col-12 col-md-5 col-lg-6">
+                        <div class="banner-media" data-aos="fade-right" data-aos-duration="1300">
+							<div class="pattern-item pattern-item__left"></div>
+                            <img src="../static/images/general/banner-img-main.png" alt="">
+							<div class="pattern-item pattern-item__right"></div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-						<div class="section-title section-title__white">
+                    <div class="col-12 col-md-7 col-lg-6">
+						<div class="section-title section-title__white" data-aos="fade-left" data-aos-duration="1300">
 							Есть идеи, но не знаете
 							с чего начать?
 						</div>
-						<div class="section-text section-text__white">
+						<div class="section-text section-text__white" data-aos="fade-left" data-aos-duration="1300">
 							Наши менеджеры выслушают ваши запросы и пожелания, помогут вам определиться с четким планом действий, подберут необходимых подрядчиков и согласуют лучшие условия!
 							Вы искали волшебную пилюлю - вот она, остальное в ваших руках.
 						</div>
-						<div class="main-call main-call__white">
+						<div class="main-call main-call__white" data-aos="fade-up" data-aos-duration="1300">
 							<a href="tel:+74957403996" class="link-white">+7 (495) 740-39-96</a>
 							<button class="btn btn-white btn-popup" data-popup="call-manager">
 								Связаться с менеджером
@@ -542,12 +609,12 @@
                 </div>
             </div>
         </section>
-		<section class="wrapper news-wrapper">
+		<section class="wrapper news-wrapper" id="news">
 			<div class="container">
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-up" data-aos-duration="1300">
 					Новости партнеров
 				</div>
-				<div class="news-slider">
+				<div class="news-slider" data-aos="fade-up" data-aos-duration="1300">
 					<div class="slide">
 						<div class="news-item">
 							<div class="news-item__media">
@@ -636,13 +703,52 @@
 				</div>
 			</div>
 		</section>
-		<section class="wrapper brands-wrapper">
+		<section class="wrapper brands-wrapper" id="brands">
 			<div class="container">
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-up" data-aos-duration="1000">
 					Партнеры
 				</div>
 				<div class="brands-wrap">
-					<div class="brands-item">
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
+						<img src="../static/images/general/brand-1.jpg" alt="">
+					</div>
+					<div class="brands-item" data-aos="fade-up" data-aos-duration="1300">
 						<img src="../static/images/general/brand-1.jpg" alt="">
 					</div>
 				</div>
@@ -653,7 +759,7 @@
 	<footer class="footer" id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-md-4 col-lg-4 ">
                 <a href="/" class="footer-logo">
                     <img src="../static/images/svg/ic-logo.svg" alt="">
                     <span class="footer-logo__text">
@@ -669,56 +775,56 @@
                 </div>
 
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-6 col-md-4 col-lg-5 ">
                 <div class="footer-title">
                     Меню сайта
                 </div>
                 <div class="footer-nav__list">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="#main">
                                 Главная
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#about">
                                 О нас
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#service">
                                 Услуги
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#advantage">
                                 Выгоды
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#work">
                                 Как мы работаем
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#news">
                                 Новости
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#brands">
                                 Участники
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#footer">
                                 Контакты
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 ">
                 <div class="footer-title">
                     Контакты
                 </div>
@@ -734,16 +840,42 @@
                     Заказать звонок
                     <form action="#" class="call-me">
                         <label>
-                            <input type="number" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                            <input type="tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
                         </label>
-                        <button type="submit">Отправить</button>
+                        <button type="submit" class="btn btn-blue">Отправить</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<div class="popup popup-manager" data-popup="popup-call">
+    <div class="popup-centered">
+        <div class="popup-title">
+            Заполните форму и мы свяжемся с вами
+        </div>
+        <div class="popup-form">
+            <form>
+                <label class="label">
+                    <input class="input" type="text" name="name[call-name]" placeholder="Ваше имя" required="">
+                </label>
+                <label class="label">
+                    <input class="input" type="tel" name="phone[call-phone]" placeholder="Телефон" required="">
+                </label>
+                <button class="btn btn-blue" type="submit">
+                    <span>Заказать звонок</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+<div class="popup popup-manager">
+    <div class="popup-centered">
 
+    </div>
+    <div class="popup-overlay"></div>
+</div>
 
 </div>
 <!--end-page-wrapper-->

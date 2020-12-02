@@ -101,14 +101,15 @@
             </div>
             <div class="header-search">
                 <form action="#">
+                    <button type="submit">
+                        <svg class="icon">
+                            <use xlink:href="#ic-search"></use>
+                        </svg>
+                    </button>
                     <label for="search">
                         <input id="search" type="search" placeholder="Поиск по сайту">
                     </label>
-                    <button type="submit">
-                        <svg class="icon">
-                            <use xlink:href="#search"></use>
-                        </svg>
-                    </button>
+
                 </form>
             </div>
             <a href="#" class="header-login">
@@ -138,42 +139,42 @@
             <div class="header-nav">
                 <ul class="header-nav__list">
                     <li>
-                        <a href="#">
+                        <a href="#main">
                             Главная
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#about">
                             О нас
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#service">
                             Услуги
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#advantage">
                             Выгоды
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#work">
                             Как мы работаем
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#news">
                             Новости
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#brands">
                             Участники
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#footer">
                             Контакты
                         </a>
                     </li>
@@ -184,6 +185,10 @@
                 <button class="header-phone__btn popup-btn" type="button" data-popup="popup-call">
                     Заказать звонок
                 </button>
+            </div>
+            <div class="header-btn">
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
@@ -412,7 +417,7 @@
 	<footer class="footer" id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-md-4 col-lg-4 ">
                 <a href="/" class="footer-logo">
                     <img src="../static/images/svg/ic-logo.svg" alt="">
                     <span class="footer-logo__text">
@@ -428,56 +433,56 @@
                 </div>
 
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-6 col-md-4 col-lg-5 ">
                 <div class="footer-title">
                     Меню сайта
                 </div>
                 <div class="footer-nav__list">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="#main">
                                 Главная
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#about">
                                 О нас
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#service">
                                 Услуги
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#advantage">
                                 Выгоды
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#work">
                                 Как мы работаем
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#news">
                                 Новости
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#brands">
                                 Участники
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#footer">
                                 Контакты
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-6 col-md-4 col-lg-3 ">
                 <div class="footer-title">
                     Контакты
                 </div>
@@ -493,16 +498,42 @@
                     Заказать звонок
                     <form action="#" class="call-me">
                         <label>
-                            <input type="number" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                            <input type="tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
                         </label>
-                        <button type="submit">Отправить</button>
+                        <button type="submit" class="btn btn-blue">Отправить</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<div class="popup popup-manager" data-popup="popup-call">
+    <div class="popup-centered">
+        <div class="popup-title">
+            Заполните форму и мы свяжемся с вами
+        </div>
+        <div class="popup-form">
+            <form>
+                <label class="label">
+                    <input class="input" type="text" name="name[call-name]" placeholder="Ваше имя" required="">
+                </label>
+                <label class="label">
+                    <input class="input" type="tel" name="phone[call-phone]" placeholder="Телефон" required="">
+                </label>
+                <button class="btn btn-blue" type="submit">
+                    <span>Заказать звонок</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+<div class="popup popup-manager">
+    <div class="popup-centered">
 
+    </div>
+    <div class="popup-overlay"></div>
+</div>
 
 </div>
 <!--end-page-wrapper-->

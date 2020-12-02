@@ -13,6 +13,7 @@
     font-family: $monserant;
     color: $default;
     font-weight: 400;
+    max-width: 280px;
   }
   .our-location{
     font-size: 12px;
@@ -20,8 +21,11 @@
     font-family: $monserant;
     color: $primary;
     font-weight: 400;
+    margin-bottom: 10px;
     span{
       color: $default;
+      display: block;
+      margin-bottom: 14px;
     }
   }
   .footer-copy{
@@ -56,8 +60,12 @@
       a{
         font-size: 14px;
         line-height: 16px;
+        font-weight: 500;
         font-family: $monserant;
         color: $default;
+        &:hover{
+          color: $primary;
+        }
       }
     }
   }
@@ -74,8 +82,42 @@
       color: $default;
       font-weight: 500;
       display: block;
+      margin-top: 5px;
     }
 
     margin-bottom: 20px;
+  }
+  .call-me{
+    margin-top: 10px;
+    input{
+      background: $light;
+      border: 0;
+      outline: none;
+      color: #A1A4B3;
+      font-size: 14px;
+      line-height: 16px;
+      height: 32px;
+      font-family: $monserant;
+      font-weight: 400;
+      padding: 10px;
+    }
+    button{
+      width: 80px;
+      max-width: initial;
+      min-width: 50px;
+      position: absolute;
+      right: 15px;
+      background: $primary;
+      font-size: 13px;
+      color: $white;
+      font-family: $monserant;
+      font-weight: 400;
+      padding: 5px;
+      max-height: 32px;
+      height: 32px;
+      &:hover{
+        background: $secondary;
+      }
+    }
   }
 }

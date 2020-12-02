@@ -1,18 +1,31 @@
+.page-content{
+  padding-top: 100px;
+}
 .header{
+  height: 101px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  background: $white;
+  &.header-scroll{
+    box-shadow: 5px 5px 10px 5px rgba(8, 12, 20, 0.2);
+  }
   &-top{
-    padding: 20px 0;
+    padding: 5px 0 4px;
     border-bottom: 1px solid $light;
     .container{
       display: flex;
-      justify-content: space-between;
-      max-width: 1400px;
+      max-width: 1320px;
     }
   }
-
   &-lang{
     display: flex;
     align-items: center;
     position: relative;
+    width: 85px;
+    margin-right: 45px;
   }
   &-lang__media{
     width: 14px;
@@ -29,6 +42,8 @@
     flex-direction: column;
     .icon{
       height: 5px;
+      fill: none;
+      stroke: $gray;
     }
   }
   &-lang__title{
@@ -46,6 +61,48 @@
   &-social{
     ul{
       display: flex;
+    }
+    li{
+      margin: 0 5px;
+    }
+    a{
+      .icon{
+        fill: $default;
+        width: 14px;
+        height: 14px;
+      }
+      &:hover{
+        .icon{
+          fill: $primary;
+        }
+      }
+    }
+  }
+  &-search{
+    margin: 0 60px 0 auto;
+    button{
+      background: transparent;
+      width: 14px;
+      height: 14px;
+      margin-right: 10px;
+      .icon{
+        width: 14px;
+        height: 14px;
+        position: relative;
+        top: 2px;
+      }
+    }
+    input{
+      border: 0;
+      font-size: 13px;
+      line-height: 16px;
+      color: $default;
+      font-weight: 500;
+      font-family: $monserant;
+      outline: none;
+      &:focus{
+        border-bottom: 1px solid $primary;
+      }
     }
   }
   &-login{
@@ -67,11 +124,11 @@
     line-height: 16px;
   }
   &-bottom{
-    padding: 15px 0;
+    padding: 15px 0 16px;
     .container{
       display: flex;
       align-items: center;
-      max-width: 1400px;
+      max-width: 1320px;
     }
   }
   &-logo{
@@ -110,7 +167,7 @@
       font-size: 15px;
       line-height: 15px;
       &:hover{
-        color: $gray;
+        color: $primary;
       }
     }
   }
