@@ -498,7 +498,7 @@
                     Заказать звонок
                     <form action="#" class="call-me">
                         <label>
-                            <input type="tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+                            <input type="tel" placeholder="+7 (___) ___-__-__" required>
                         </label>
                         <button type="submit" class="btn btn-blue">Отправить</button>
                     </form>
@@ -507,15 +507,19 @@
         </div>
     </div>
 </footer>
-<div class="popup popup-manager" data-popup="popup-call">
+<div class="popup popup-call" data-popup="popup-call">
     <div class="popup-centered">
+        <div class="popup-close">
+            <span></span>
+            <span></span>
+        </div>
         <div class="popup-title">
             Заполните форму и мы свяжемся с вами
         </div>
         <div class="popup-form">
             <form>
                 <label class="label">
-                    <input class="input" type="text" name="name[call-name]" placeholder="Ваше имя" required="">
+                    <input  class="input" type="text" name="name[call-name]" placeholder="Ваше имя" required="">
                 </label>
                 <label class="label">
                     <input class="input" type="tel" name="phone[call-phone]" placeholder="Телефон" required="">
@@ -528,9 +532,23 @@
     </div>
     <div class="popup-overlay"></div>
 </div>
+
+
 <div class="popup popup-manager">
     <div class="popup-centered">
 
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+<div class="popup popup-call" data-popup="popup-su">
+    <div class="popup-centered">
+        <div class="popup-close">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="popup-title">
+            Заполните форму и мы свяжемся с вами
+        </div>
     </div>
     <div class="popup-overlay"></div>
 </div>
@@ -542,6 +560,7 @@
 </div>
 <!-- build:js  ../static/js/lib.js -->
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/inputmask.min.js"></script>
     <script type="text/javascript" src="../static/js/slick.min.js"></script>
     <script type="text/javascript" src="../static/js/aos.min.js"></script>
 <!-- endbuild -->

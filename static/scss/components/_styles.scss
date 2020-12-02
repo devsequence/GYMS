@@ -72,6 +72,22 @@ section {
   padding: 90px 0;
   z-index: 1;
 }
+.label{
+  font-family: $monserant;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+.input{
+  border:1px solid  $gray;
+  height: 46px;
+  padding: 10px;
+  font-family: $monserant;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $default;
+}
 input{
   outline: none;
 }
@@ -371,10 +387,118 @@ button{
     margin-bottom: 20px;
   }
 }
+.hide-scroll{
+  overflow: hidden;
+}
 .popup{
   opacity: 0;
   left: -100%;
   width: 100%;
+  height: 100vh;
   z-index: -1;
   position: fixed;
+  transition: all ease 300ms;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &.active{
+    left: 0;
+    z-index: 100;
+    opacity: 1;
+  }
+  &-centered{
+    position: absolute;
+    z-index: 2;
+    max-width: 500px;
+    background: $white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  &-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+    span{
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      left: 0;
+      background: $default;
+      transition: all ease 300ms;
+      transform: rotate(0);
+      &:nth-child(1){
+        transform: rotate(-45deg);
+      }
+      &:nth-child(2){
+        transform: rotate(-135deg);
+      }
+    }
+  }
+  &-title{
+    font-family: $monserant;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $default;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &-form{
+    form{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+      font-size: 0;
+    }
+    label{
+      display: inline-block;
+      width: calc(50% - 30px);
+      margin: 0 15px;
+    }
+    input{
+      width: 100%;
+    }
+    .btn-blue{
+      font-family: $monserant;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 24px;
+      color: $white;
+      height: 50px;
+      max-width: 215px;
+      min-width: 215px;
+      padding: 10px 10px;
+      margin: 20px auto;
+      box-sizing: border-box;
+      background: $primary;
+      &:hover{
+        background: $secondary;
+      }
+    }
+  }
+  &-text{
+    font-family: $monserant;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $default;
+  }
+  &-overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($default, .5);
+  }
 }

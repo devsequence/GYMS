@@ -1,13 +1,15 @@
-AOS.init();
+AOS.init({
+    // disable: 'mobile',
+});
+$('input[type="tel"]').inputmask("+7 (999) 999-99-99");
+
 $(window).on('scroll', function() {
     var $this = $(this);
-
     if ($this.scrollTop() > 1) {
         $('.header').addClass('header-scroll');
     }else {
         $('.header').removeClass('header-scroll');
     }
-
 });
 $('.counter-block__numb').each(function () {
     var $this = $(this);
@@ -22,6 +24,8 @@ $('.counter-block__numb').each(function () {
         });
 
 });
+
+
 $(".header-nav__list a[href^='#']").on('click', function (e){
     e.preventDefault();
     var $this = $(this);
@@ -34,7 +38,6 @@ $(".header-nav__list a[href^='#']").on('click', function (e){
 var windowWidth = $(window).width();
 if (windowWidth < 768) {
     // mobileScrollAnimate();
-
     $('.service-item').on('click', function (e) {
         e.preventDefault();
         var $this = $(this);
@@ -71,37 +74,39 @@ else {
         });
     });
 }
-$('.dropdown-title').on('click', function (e) {
-    var $this = $(this);
-    $this.next().toggleClass('open');
-});
-$(document).mouseup(function (e){
-    var div = $('.dropdown');
-    if (!div.is(e.target)
-        && div.has(e.target).length === 0) {
-        div.find('.dropdown-list').removeClass('open');
-    }
-});
-$('.dropdown-title').each(function () {
-    var text = $('.dropdown-list li:first').text();
-    $(this).html(text);
-    $('.dropdown-list li').on('click', function (e) {
-        e.preventDefault();
-        var $this = $(this);
-        var $list = $this.html();
-        var $thisID = $this.data('price');
-        // var $currItem = $('.plan-item__current [data-price=' + $thisID + ']');
-        // var $currItemPlan = $('.plan-item__sale-pers [data-price=' + $thisID + ']');
-        $this.parents().find('.dropdown-title').html($list);
-        $('.dropdown-list').removeClass('open');
-        $('.plan-item__current, .plan-item__sale-pers, .plan-item__sale s').addClass('hidden');
-        $('.plan-item__current[data-price = '+$thisID+']').removeClass('hidden');
-        $('.plan-item__sale-pers[data-price = '+$thisID+']').removeClass('hidden');
-        $('.plan-item__sale-mons[data-price = '+$thisID+']').removeClass('hidden');
-        console.log($thisID);
-
-    });
-});
+//
+// $('.dropdown-title').on('click', function (e) {
+//     var $this = $(this);
+//     $this.next().toggleClass('open');
+// });
+//
+// $(document).mouseup(function (e){
+//     var div = $('.dropdown');
+//     if (!div.is(e.target)
+//         && div.has(e.target).length === 0) {
+//         div.find('.dropdown-list').removeClass('open');
+//     }
+// });
+// $('.dropdown-title').each(function () {
+//     var text = $('.dropdown-list li:first').text();
+//     $(this).html(text);
+//     $('.dropdown-list li').on('click', function (e) {
+//         e.preventDefault();
+//         var $this = $(this);
+//         var $list = $this.html();
+//         var $thisID = $this.data('price');
+//         // var $currItem = $('.plan-item__current [data-price=' + $thisID + ']');
+//         // var $currItemPlan = $('.plan-item__sale-pers [data-price=' + $thisID + ']');
+//         $this.parents().find('.dropdown-title').html($list);
+//         $('.dropdown-list').removeClass('open');
+//         $('.plan-item__current, .plan-item__sale-pers, .plan-item__sale s').addClass('hidden');
+//         $('.plan-item__current[data-price = '+$thisID+']').removeClass('hidden');
+//         $('.plan-item__sale-pers[data-price = '+$thisID+']').removeClass('hidden');
+//         $('.plan-item__sale-mons[data-price = '+$thisID+']').removeClass('hidden');
+//         console.log($thisID);
+//
+//     });
+// });
 
 $('.header-btn').on('click', function (e) {
     e.preventDefault();
@@ -166,6 +171,31 @@ $('.news-slider').slick({
             }
         }
     ]
+});
+
+function popupOpen() {
+    const $popupButton = $('.popup-btn');
+    $popupButton.on('click', function (e) {
+        const $this = $(this);
+        const popupButtonData = $this.data('popup');
+        $('.popup').removeClass('active');
+        $('body').addClass('hide-scroll');
+        $('div[data-popup = '+popupButtonData+']').addClass('active');
+    });
+}
+popupOpen();
+
+$('.popup-close').on('click', function (e) {
+    var $this = $(this);
+    $this.parent().parent().removeClass('active');
+    $('.popup-overlay').removeClass('active');
+    $('body').removeClass('hide-scroll');
+});
+$('.popup-overlay').on('click', function (e) {
+    var $this = $(this);
+    $this.removeClass('active');
+    $('.popup').removeClass('active');
+    $('body').removeClass('hide-scroll');
 });
 
 

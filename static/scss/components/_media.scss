@@ -226,11 +226,11 @@
     &:before{
       position: absolute;
       content: '';
-      left: 0;
+      left: -15px;
       top: 0;
       background: $primary;
       height: 100%;
-      width: 100%;
+      width: calc(100% + 30px);
     }
   }
   .advantage-item{
@@ -542,6 +542,21 @@
     border-right: 0 !important;
     border-bottom: 1px solid $gray !important;
   }
+ .popup{
+   &-centered{
+     max-width: 300px;
+   }
+   &-form{
+     form{
+       margin: 0;
+     }
+     label{
+       display: inline-block;
+       width: 100%;
+       margin: 0 0 15px;
+     }
+   }
+ }
 }
 @media screen and (max-width: 480px) {
   .header-nav{
