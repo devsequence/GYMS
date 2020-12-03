@@ -66,6 +66,7 @@
   }
 }
 @media screen and (max-width: 1200px) {
+
   .main-slider{
     padding: 30px 0 0;
   }
@@ -153,6 +154,15 @@
   }
   .brands-item{
     max-width: calc(232px - 2px);
+  }
+  .sidebar-info{
+    .call-me{
+      button{
+        position: relative;
+        right: 0;
+        margin-top: 5px;
+      }
+    }
   }
 }
 @media screen and (max-width: 992px) {
@@ -351,6 +361,43 @@
       width: 100%;
     }
   }
+  .sidebar-slider, .sidebar-info, .sidebar-title{
+    display: none;
+  }
+  .bread-crumbs{
+    margin-bottom: 40px;
+  }
+  .page-title{
+    margin-bottom: 20px;
+  }
+  .category-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -3px;
+    li{
+      margin: 0 3px 6px;
+    }
+    a{
+      border: 1px solid $light;
+      min-width: 157px;
+      line-height: 34px;
+    }
+  }
+  .page-page{
+    .page-sidebar{
+      display: none;
+    }
+  }
+  .page-form {
+    .section-text{
+      margin-bottom: 40px;
+    }
+
+  }
+  .form-item{
+    margin-bottom: 20px;
+    
+  }
 }
 @media screen and (max-width: 768px) {
 
@@ -483,7 +530,6 @@
     }
   }
   .brands-item{
-
     max-width: calc(33.33333% - 2px);
   }
   .footer {
@@ -504,8 +550,71 @@
       }
     }
   }
+  .news-page{
+    .page-title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      svg{
+        display: block;
+        fill: none;
+        stroke: #A1A4B3;
+      }
+      &.is-open{
+        svg{
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .category-list{
+    //display: none;
+    li{
+      margin:0 3px 5px;
+    }
+    a{
+      width: 100%;
+
+    }
+  }
+  .page-item__list{
+    margin: 0 0 10px;
+    flex-wrap: wrap;
+  }
+  .page-item{
+    display: flex;
+    width: 100%;
+    margin: 0 0 20px;
+    &__media{
+      width: 55px;
+    }
+    &__description{
+      width: calc(100% - 55px);
+    }
+    &__title{
+      margin-bottom: 10px;
+    }
+  }
 }
 @media screen and (max-width: 576px) {
+  .category-list{
+    flex-direction: column;
+    margin: 0;
+    li{
+      margin:0 0 5px;
+    }
+    a{
+      width: 100%;
+
+    }
+  }
+  .news-page {
+    .news-item{
+      width: calc(50% - 16px);
+    }
+  }
   .work-wrapper{
     .section-title{
       text-align: center;

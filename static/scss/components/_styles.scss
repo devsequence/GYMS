@@ -88,6 +88,18 @@ section {
   line-height: 22px;
   color: $default;
 }
+.textarea{
+  border:1px solid  $gray;
+  height: 46px;
+  padding: 10px;
+  font-family: $monserant;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $default;
+  outline: none;
+  resize: none;
+}
 input{
   outline: none;
 }
@@ -327,6 +339,80 @@ button{
   }
 
 }
+.bread-crumbs{
+  background: $light;
+  padding: 12px 0;
+  margin-bottom: 60px;
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__item{
+    font-family: $monserant;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: $gray-100;
+    position: relative;
+    margin-right: 23px;
+    &:after{
+      position: absolute;
+      content: '';
+      right: -16px;
+      top: 50%;
+      margin-top: -1px;
+      background: url("../images/svg/ic-chevron.svg") no-repeat;
+      width: 8px;
+      height: 5px;
+      transform: rotate(-90deg);
+    }
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    font-family: $monserant;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: $default;
+  }
+}
+.call-me{
+  margin-top: 10px;
+  input{
+    background: $light;
+    border: 0;
+    outline: none;
+    color: #A1A4B3;
+    font-size: 14px;
+    line-height: 16px;
+    height: 32px;
+    font-family: $monserant;
+    font-weight: 400;
+    padding: 10px;
+  }
+  button{
+    width: 80px;
+    max-width: initial;
+    min-width: 50px;
+    position: absolute;
+    right: 15px;
+    background: $primary;
+    font-size: 13px;
+    color: $white;
+    font-family: $monserant;
+    font-weight: 400;
+    padding: 5px;
+    max-height: 32px;
+    height: 32px;
+    &:hover{
+      background: $secondary;
+    }
+  }
+}
 .page-sidebar{
 
 }
@@ -348,6 +434,8 @@ button{
       .icon{
         fill: none;
         stroke: $white;
+        width: 12px;
+        height: 12px;
       }
     }
     .slick-prev{
@@ -376,6 +464,7 @@ button{
     color: $default;
     font-weight: 400;
     a{
+      margin-top: 5px;
       font-size: 16px;
       line-height: 16px;
       font-family: $monserant;
@@ -500,5 +589,57 @@ button{
     bottom: 0;
     left: 0;
     background: rgba($default, .5);
+  }
+}
+.page-form{
+  .section-title{
+    text-align: center;
+  }
+  .section-text{
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .btn-blue{
+    font-family: $monserant;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: $white;
+    height: 50px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background: $primary;
+    &:hover{
+      background: $secondary;
+    }
+  }
+}
+.page-form__wrap{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.form-item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: $monserant;
+  line-height: 24px;
+  color: $default;
+  .label{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+  }
+  input{
+    width: 100%;
+  }
+  .textarea{
+    min-height: 361px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 }

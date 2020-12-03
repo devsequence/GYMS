@@ -53,6 +53,12 @@ if (windowWidth < 768) {
         //     $this.addClass('is-open');
         // }
     });
+    $('.page-sidebar .page-title').on('click', function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this.next().slideToggle();
+        $this.toggleClass('is-open');
+    });
 }
 
 else {
